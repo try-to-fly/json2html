@@ -1,0 +1,5 @@
+let syntaxHighlight = require('./app');
+
+let testObj = [{ "error": { "level": { "_name": "NelError", "_value": 2 }, "msg": " failed by java.lang.NullPointerException : null\nterm.TermController.loadInfo(TermController.java:78)\nterm.TermController.Session(TermController.java:483)\ncom.naertui.pangea.controller.C_DrOp.lambda$0(C_DrOp.java:35)\ncom.naertui.pangea.model._Model.Do(_Model.java:41)\ncom.naertui.pangea.controller.C_DrOp.TransAgent(C_DrOp.java:25)\ncom.naertui.pangea.NrtServ._DrOpDisp.___TransAgent(_DrOpDisp.java:96)\ncom.naertui.pangea.NrtServ._DrOpDisp.__dispatch(_DrOpDisp.java:157)\nIceInternal.Incoming.invoke(Incoming.java:221)\nIce.ConnectionI.invokeAll(ConnectionI.java:2536)\nIce.ConnectionI.dispatch(ConnectionI.java:1145)\nIce.ConnectionI.message(ConnectionI.java:1056)\nIceInternal.ThreadPool.run(ThreadPool.java:395)\nIceInternal.ThreadPool.access$300(ThreadPool.java:12)\nIceInternal.ThreadPool$EventHandlerThread.run(ThreadPool.java:832)\njava.lang.Thread.run(Thread.java:745)\n", "code": { "_name": "NecErrorSys", "_value": 0 } }, "url": "/a/b", "getJ": {} }];
+
+console.log(syntaxHighlight(testObj));
